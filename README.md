@@ -3,14 +3,14 @@
 # Fem i rad (Gomoku) – Grupprojekt  
 
 ##  Om Projektet  
-Detta är ett grupprojekt inom kursen *Packering, Leverans och Uppföljning*.  
+Detta är ett grupprojekt inom kursen *Paketering, Leverans och Uppföljning*.  
 Målet är att tillsammans designa och implementera ett **Fem i rad (Gomoku)**-spel, paketera det, leverera det och reflektera över arbetsprocessen i teamet.  
 
 ---
 
 ##  Projektmål  
 - Öva på **samarbete i grupp** med agilt arbetssätt (dagliga standups, sprintplanering, veckovisa demos).  
-- Skapa en fungerande **Gomoku webbapp** (5×5 eller 15×15 rutnät).  
+- Skapa en fungerande **Gomoku webbapp** (5 i rad i ett 15×15 rutnät).  
 - Paketera och **leverera** appen (deployment på Netlify/Vercel).  
 - Genomföra **uppföljning** (dokumentera reflektioner och förbättringar).  
 
@@ -29,7 +29,7 @@ Målet är att tillsammans designa och implementera ett **Fem i rad (Gomoku)**-s
 ##  Komponenter (Planerade)  
 - **GameBoard** – renderar spelbrädet.  
 - **Cell** – enskild ruta.  
-- **Stone** – svart/vit spelpjäs.  
+- **Marker** – kryss eller ring  
 - **Scoreboard** – visar poäng & aktuell spelare.  
 - **Controls** – knappar för starta om / återställ.  
 
