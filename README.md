@@ -47,7 +47,7 @@ Målet är att tillsammans designa och implementera ett **Fem i rad (Gomoku)**-s
 ##  Så här kör du (Utveckling)  
 ```bash
 # klona repo
-git clone https://github.com/tic-tac-toe-frk24s/gomoku.git  
+git clone https://github.com/tic-tac-toe-frk24s/frk24s-frontend.git  
 
 # installera beroenden
 npm install  
