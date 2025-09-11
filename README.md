@@ -17,12 +17,12 @@ Målet är att tillsammans designa och implementera ett **Fem i rad (Gomoku)**-s
 ---
 
 ##  Team & Roller  
-- **Produktägare (PO):**  
-- **Scrum Master (SM):**  
-- **Frontend-utvecklare:**  
-- **UX/UI Designer:**  
-- **Testare / QA:**  
-- **DevOps / Leverans:**  
+- **Produktägare (PO): Mikael **  
+- **Scrum Master (SM): Karez **  
+- **Frontend-utvecklare: Yusra **  
+- **UX/UI Designer: Swathi **  
+- **Testare / QA: Ewa **  
+- **DevOps / Leverans: Karez **  
 
 ---
 
