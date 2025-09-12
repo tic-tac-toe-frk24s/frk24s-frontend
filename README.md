@@ -1,7 +1,7 @@
 # tic-tac-toe-frk24s  
-#merry was  here
+
 # Fem i rad (Gomoku) – Grupprojekt  
-2
+
 ##  Om Projektet  
 Detta är ett grupprojekt inom kursen *Paketering, Leverans och Uppföljning*.  
 Målet är att tillsammans designa och implementera ett **Fem i rad (Gomoku)**-spel, paketera det, leverera det och reflektera över arbetsprocessen i teamet.  
