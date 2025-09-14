@@ -1,12 +1,11 @@
-Ewa was here
 
 # tic-tac-toe-frk24s  
 
 # Fem i rad (Gomoku) – Grupprojekt  
 
 ##  Om Projektet  
-Detta är ett grupprojekt inom kursen *Paketering, Leverans och Uppföljning*.  
-Målet är att tillsammans designa och implementera ett **Fem i rad (Gomoku)**-spel, paketera det, leverera det och reflektera över arbetsprocessen i teamet.  
+Detta är ett grupprojekt inom kursen ***Paketering, Leverans och Uppföljning*** för frontendutvecklare vid Jensen YH.  
+Målet är att tillsammans designa och implementera ett **Fem i rad-spel (Gomoku), paketera det, leverera det och reflektera över arbetsprocessen i teamet.  
 
 ---
 
@@ -19,7 +18,12 @@ Målet är att tillsammans designa och implementera ett **Fem i rad (Gomoku)**-s
 ---
 
 ##  Team & Roller  
-- **Produktägare (PO), Scrum Master (SM), Frontend-utvecklare, UX/UI Designer, Testare / QA, DevOps / Leverans **  
+- **Produktägare (PO)**  
+- **Scrum Master (SM)**  
+- **Frontend-utvecklare (FD)**  
+- **UX/UI Designer (UX/UI)**  
+- **Testare (QA)**  
+- **DevOps/Leverans (DO)**  
 
 ---
 
