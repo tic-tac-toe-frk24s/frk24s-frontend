@@ -1,13 +1,13 @@
-
-import { Regler } from ".";
+import React from "react";
+import ReglerButton from "./ReglerButton";
 
 export default {
-  title: "Components/Regler",  
-  component: Regler,
+  title: "Components/ReglerButton",
+  component: ReglerButton,
 };
 
 export const Default = {
   args: {
-    buttonLabel: "Regler", 
+    buttonLabel: "Regler",
   },
 };
