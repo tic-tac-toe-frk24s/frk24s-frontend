@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
 import Regler from "../components/Regler";
-import StartButton from "../components/StartButton";
+import StartButton from "../components/StartButton/StartButton";
 import ChoosePiece from "../components/ChoosePiece";
 
 const HomePage = () => {
@@ -20,7 +20,7 @@ const HomePage = () => {
       <Header />
       <Regler />
       <ChoosePiece onSelect={setPiece} />
-      <StartButton onStart={handleStart} />
+      <StartButton StartButtonText="Starta spelet" onStart={handleStart} />
     </div>
   );
 };
