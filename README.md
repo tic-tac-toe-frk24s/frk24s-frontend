@@ -1,60 +1,12 @@
+# React + Vite
 
-# tic-tac-toe-frk24s  
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-# Fem i rad (Gomoku) – Grupprojekt  
+Currently, two official plugins are available:
 
-##  Om Projektet  
-Detta är ett grupprojekt inom kursen ***Paketering, Leverans och Uppföljning*** för frontendutvecklare vid Jensen YH.  
-Målet är att tillsammans designa och implementera ett **Fem i rad-spel (Gomoku), paketera det, leverera det och reflektera över arbetsprocessen i teamet.  
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
----
+## Expanding the ESLint configuration
 
-##  Projektmål  
-- Öva på **samarbete i grupp** med agilt arbetssätt (dagliga standups, sprintplanering, veckovisa demos).  
-- Skapa en fungerande **Gomoku webbapp** (5 i rad i ett 15×15 rutnät).  
-- Paketera och **leverera** appen (deployment på Netlify/Vercel).  
-- Genomföra **uppföljning** (dokumentera reflektioner och förbättringar).  
-
----
-
-##  Team & Roller  
-- **Produktägare (PO)**  
-- **Scrum Master (SM)**  
-- **Frontend-utvecklare (FD)**  
-- **UX/UI Designer (UX/UI)**  
-- **Testare (QA)**  
-- **DevOps/Leverans (DO)**  
-
----
-
-##  Komponenter (Planerade)  
-- **GameBoard** – renderar spelbrädet.  
-- **Cell** – enskild ruta.  
-- **Marker** – kryss eller ring  
-- **Scoreboard** – visar poäng & aktuell spelare.  
-- **Controls** – knappar för starta om / återställ.  
-
----
-
-## Teknisk Stack  
-- **Frontend:** React + Vite (JavaScript/TypeScript)  
-- **Style:** CSS / Tailwind  
-- **Design:** Figma (mockups + komponenter)  
-- **Samarbete:** Trello, GitHub, Discord  
-- **Deployment:** Netlify / Vercel  
-
----
-
-##  Så här kör du (Utveckling)  
-```bash
-# klona repo
-git clone https://github.com/tic-tac-toe-frk24s/frk24s-frontend.git  
-
-# installera beroenden
-npm install  
-
-# kör lokalt
-npm run dev  
-
-# bygg för produktion
-npm run build  
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
