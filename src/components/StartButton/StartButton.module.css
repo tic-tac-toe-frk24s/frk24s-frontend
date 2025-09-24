@@ -5,8 +5,8 @@
 }
 
 .startButton {
-  background: linear-gradient(135deg, #43e97b, #38f9d7);
-  color: black;
+  background: linear-gradient(135deg, #5a4db7 0%, #8b5fbf 100%);
+  color: white;
   border: none;
   padding: 20px 60px;
   border-radius: 12px;
