@@ -18,7 +18,7 @@ const ReglerButton = ({ buttonLabel = "Regler" }) => {
           <h2 className={styles.modalTitle}>Regler — Fem i rad</h2>
             <ul className={styles.modalList}>
               <li>Spelet spelas på ett rutnät 5×5.</li>
-              <li>Två spelare turas om att lägga sin symbol (X eller O).</li>
+              <li>Två spelare turas om att lägga sina cirklar (●).</li>
               <li>Målet är att få 5 i rad – vågrätt, lodrätt eller diagonalt.</li>
               <li>Du får inte lägga på en ruta som redan är tagen.</li>
               <li>Den som först får 5 i rad vinner.</li>
