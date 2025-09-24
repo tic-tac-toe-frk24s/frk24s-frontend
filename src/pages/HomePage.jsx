@@ -25,7 +25,7 @@ const HomePage = () => {
           <ReglerButton buttonLabel="Regler" />
         </div>
         
-        <ChoosePiece onSelect={setPiece} />
+        {/* <ChoosePiece onSelect={setPiece} /> */}
     </div>
   );
 };

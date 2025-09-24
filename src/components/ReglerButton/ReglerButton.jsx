@@ -15,8 +15,8 @@ const ReglerButton = ({ buttonLabel = "Regler" }) => {
       {open && (
         <div className={styles.overlay} onClick={() => setOpen(false)}>
           <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
-            <h2>Regler — Fem i rad</h2>
-            <ul>
+          <h2 className={styles.modalTitle}>Regler — Fem i rad</h2>
+            <ul className={styles.modalList}>
               <li>Spelet spelas på ett rutnät 5×5.</li>
               <li>Två spelare turas om att lägga sin symbol (X eller O).</li>
               <li>Målet är att få 5 i rad – vågrätt, lodrätt eller diagonalt.</li>
