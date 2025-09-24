@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
-import Regler from "../components/ReglerButton";
+import ReglerButton from "../components/ReglerButton/ReglerButton";
 import StartButton from "../components/StartButton/StartButton";
 import ChoosePiece from "../components/ChoosePiece";
 
@@ -18,7 +18,7 @@ const HomePage = () => {
   return (
     <div>
       <Header />
-      <Regler />
+      <ReglerButton />
       <ChoosePiece onSelect={setPiece} />
       <StartButton StartButtonText="Starta spelet" onStart={handleStart} />
     </div>
