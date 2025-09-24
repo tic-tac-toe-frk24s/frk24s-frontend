@@ -1,0 +1,10 @@
+.reglerButton {
+  background: #999999; 
+  color: black; /* svart text */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}

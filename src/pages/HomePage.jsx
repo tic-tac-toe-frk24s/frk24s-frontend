@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
-import Regler from "../components/Regler";
+import Regler from "../components/ReglerButton";
 import StartButton from "../components/StartButton/StartButton";
 import ChoosePiece from "../components/ChoosePiece";
 
