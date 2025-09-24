@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import Header from "../components/Header";
+import Header from "../components/Header/Header";
 import ReglerButton from "../components/ReglerButton/ReglerButton";
 import StartButton from "../components/StartButton/StartButton";
 import ChoosePiece from "../components/ChoosePiece";
+import styles from "./HomePage.module.css";
 
 const HomePage = () => {
   const [piece, setPiece] = useState(null);
@@ -18,9 +19,13 @@ const HomePage = () => {
   return (
     <div>
       <Header />
-      <ReglerButton />
-      <ChoosePiece onSelect={setPiece} />
-      <StartButton StartButtonText="Starta spelet" onStart={handleStart} />
+      {/* Container för knappar */}
+        <div className={styles.buttonContainer}>
+          <StartButton onStart={handleStart} StartButtonText="Starta spelet" />
+          <ReglerButton buttonLabel="Regler" />
+        </div>
+        
+        <ChoosePiece onSelect={setPiece} />
     </div>
   );
 };

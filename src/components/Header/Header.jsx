@@ -1,14 +1,8 @@
+import React from "react";
+import styles from "./Header.module.css";
 
-import React from 'react'
-
-const Header = () => {
-
- return(
-
-	<>Welcome to Tic-Tac-Toe!</>
-
- );
-
+const Header = ({ title = "Welcome to Tic-Tac-Toe" }) => {
+  return <h1 className={styles.headerTitle}>{title}</h1>;
 };
 
 export default Header;

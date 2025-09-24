@@ -1,32 +1,25 @@
-.buttonContainer {
-  display: flex;
-  justify-content: center;
-  margin: 2rem 0;
-}
-
 .reglerButton {
-  background: linear-gradient(145deg, #4e4e50, #6c6c70);
+  background: linear-gradient(145deg, #4e4e50, #6c6c70); 
   color: #fff;
   font-family: 'Press Start 2P', cursive;
   border: none;
-  padding: 18px 50px;
+  padding: 35px 45px;  
   border-radius: 12px;
-  font-size: 1.2rem;
+  font-size: 20px;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.3s ease;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
 }
 
 .reglerButton:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 .reglerButton:active {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
-/* Modal */
 .overlay {
   position: fixed;
   top: 0;
@@ -42,7 +35,7 @@
 
 .modal {
   background-color: #f7f5f5ff;
-  padding: 2rem;
+  padding: 20px;
   border-radius: 12px;
   max-width: 500px;
   width: 90%;
@@ -50,8 +43,8 @@
 }
 
 .closeButton {
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
+  margin-top: 10px;
+  padding: 8px 16px;
   cursor: pointer;
   background: #888;
   color: white;
