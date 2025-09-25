@@ -20,7 +20,7 @@ const GameSetup = () => {
       return;
     }
 
-    const player2Piece = player1Piece === "white" ? "black" : "white";
+    const player2Piece = player1Piece === "yellow" ? "red" : "yellow";
     alert(
       `Spelet startas!\n${player1} (${player1Piece}) vs ${player2} (${player2Piece})`
     );
@@ -47,12 +47,19 @@ const GameSetup = () => {
       </div>
  <div>
         <h3>Spelare 1 väljer sin pjäs:</h3>
-        <ChoosePiece value={player1Piece} onChange={setPlayer1Piece} />
+        <ChoosePiece value={player1Piece} 
+        onChange={setPlayer1Piece}
+        options={[
+          { id: "yellow", label: "Gul", icon: "🟡" },
+          { id: "red",    label: "Röd", icon: "🔴" },
+      ]}
+        />
       </div>
        {player1Piece && (
         <p className={styles.selectionInfo}>
-          {player1} väljer: {player1Piece === "white" ? "⚪ Vit" : "⚫ Svart"} <br/>
-          {player2} får: {player1Piece === "white" ? "⚫ Svart" : "⚪ Vit"}
+          {player1} väljer: {player1Piece === "yellow" ? "🟡 Gul" : "🔴 Röd"} <br/>
+          {player2} får: {player1Piece === "yellow" ? "🔴 Röd" : "🟡 Gul"}
+
         </p>
       )}
       <button className={styles.startBtn} onClick={handleStartGame}>
