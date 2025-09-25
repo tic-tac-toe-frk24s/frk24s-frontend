@@ -32,20 +32,21 @@
   transform: translateY(-3px); 
   cursor: pointer;
 }
-<<<<<<< HEAD
 .backBtn {
-  align-self: flex-start;       /* place at the top-left */
-  margin-bottom: 20px;          /* spacing below button */
-  padding: 10px 18px;           /* size of button */
-  background: linear-gradient(145deg, #4e4e50, #6c6c70);  /* match your other buttons */
-  color: #fff;                  /* white text */
-  font-family: 'Press Start 2P', cursive; /* same as your app */
-  font-size: 14px;              
+  position: fixed;         
+  top: 20px;               
+  left: 20px;               
+  padding: 10px 18px;
+  background: linear-gradient(145deg, #4e4e50, #6c6c70);
+  color: #fff;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 14px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
   transition: transform 0.2s ease, box-shadow 0.3s ease;
+  z-index: 100;            
 }
 
 .backBtn:hover {
@@ -56,5 +57,34 @@
 .backBtn:active {
   transform: scale(1.02);
 }
-=======
->>>>>>> 2e4b8eb641774630d9a7e7677b643c25f2d0f3b3
+
+.header {
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  margin-bottom: 30px;
+  gap: 20px;              
+  font-family: 'Press Start 2P', cursive;
+}
+
+.playerCard {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 12px 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  color: #fff;
+}
+
+.playerPiece {
+  font-size: 22px;      
+}
+
+
+.vs {
+  font-size: 18px;
+  color: #ffeb3b;         
+}
