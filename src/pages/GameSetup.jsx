@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useGame } from "../context/GameContext";
 import InputField from "../components/InputField/InputField";
 import ChoosePiece from "../components/ChoosePiece";
+import { useNavigate } from "react-router-dom"; 
 
 import styles from "./GameSetup.module.css";
 
@@ -53,7 +54,13 @@ const { setPlayers } = useGame();
       </div>
  <div>
         <h3>Spelare 1 väljer sin pjäs:</h3>
-        <ChoosePiece value={player1Piece} onChange={setPlayer1Piece} />
+        <ChoosePiece value={player1Piece} 
+        onChange={setPlayer1Piece}
+        options={[
+          { id: "yellow", label: "Gul", icon: "🟡" },
+          { id: "red",    label: "Röd", icon: "🔴" },
+      ]}
+        />
       </div>
        {player1Piece && (
         <p className={styles.selectionInfo}>

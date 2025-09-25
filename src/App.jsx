@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage";
 import GameSetup from "./pages/GameSetup";
 import Board from "./components/Board/Board";
 import "./App.css"; 
+import BoardPage from "./pages/BoardPage";
 
 function App() {
   return (
