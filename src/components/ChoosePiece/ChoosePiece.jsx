@@ -1,65 +1,62 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styles from "./ChoosePiece.module.css";
-import { container, btn, btnActive } from "./ChoosePiece.styles";
 
 export default function ChoosePiece({
   value,                    
-  onChange,
+  onChange,                 
+  options = [
+    { id: "yellow", label: "Gul", icon: "🟡" },
+    { id: "red",    label: "Röd", icon: "🔴" },
+  ],
   disabled = false,
   lockOnFirstChoice = false,
-  disableWhite = false,     
-  disableBlack = false,     
-  whiteLabel = "Vit",
-  blackLabel = "Svart",
+  disableIds = [],         
 }) {
-  const handleClick = (color) => {
+  const handleClick = (id) => {
     if (disabled) return;
-    if (lockOnFirstChoice && value) return;   
-    if (color === "white" && disableWhite) return;
-    if (color === "black" && disableBlack) return;
-    onChange?.(color);
+    if (lockOnFirstChoice && value) return;
+    if (disableIds.includes(id)) return;
+    onChange?.(id);
   };
 
-  const disabledWhiteFinal =
-    disabled || disableWhite || (lockOnFirstChoice && !!value);
-  const disabledBlackFinal =
-    disabled || disableBlack || (lockOnFirstChoice && !!value);
-
   return (
-    <div className={styles.container} style={container}>
-      <button
-        type="button"
-        className={`${styles.btn} ${value === "white" ? styles.active : ""}`}
-        style={{ ...btn, ...(value === "white" ? btnActive : {}) }}
-        aria-pressed={value === "white"}
-        onClick={() => handleClick("white")}
-        disabled={disabledWhiteFinal}
-      >
-        ⚪ {whiteLabel}
-      </button>
+    <div className={styles.container}>
+      {options.map((opt) => {
+        const isActive = value === opt.id;
+        const isDisabled =
+          disabled || disableIds.includes(opt.id) || (lockOnFirstChoice && !!value);
 
-      <button
-        type="button"
-        className={`${styles.btn} ${value === "black" ? styles.active : ""}`}
-        style={{ ...btn, ...(value === "black" ? btnActive : {}) }}
-        aria-pressed={value === "black"}
-        onClick={() => handleClick("black")}
-        disabled={disabledBlackFinal}
-      >
-        ⚫ {blackLabel}
-      </button>
+        return (
+          <button
+            key={opt.id}
+            type="button"
+            className={`${styles.btn} ${isActive ? styles.active : ""}`}
+            aria-pressed={isActive}
+            onClick={() => handleClick(opt.id)}
+            disabled={isDisabled}
+            title={opt.label}
+          >
+            <span style={{ marginRight: 6 }}>{opt.icon}</span>
+            {opt.label}
+          </button>
+        );
+      })}
     </div>
   );
 }
 
 ChoosePiece.propTypes = {
-  value: PropTypes.oneOf(["white", "black", null]),
+  value: PropTypes.string,
   onChange: PropTypes.func,
+  options: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      icon: PropTypes.node,
+    })
+  ),
   disabled: PropTypes.bool,
-  lockOnFirstChoice: PropTypes.bool,  
-  disableWhite: PropTypes.bool,       
-  disableBlack: PropTypes.bool,       
-  whiteLabel: PropTypes.string,
-  blackLabel: PropTypes.string,
+  lockOnFirstChoice: PropTypes.bool,
+  disableIds: PropTypes.arrayOf(PropTypes.string),
 };
