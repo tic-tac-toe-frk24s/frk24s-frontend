@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import InputField from "../components/InputField/InputField";
 import ChoosePiece from "../components/ChoosePiece";
+import { useNavigate } from "react-router-dom"; 
 
 import styles from "./GameSetup.module.css";
 
@@ -9,6 +10,8 @@ const GameSetup = () => {
   const [player2, setPlayer2] = useState("");
   
   const [player1Piece, setPlayer1Piece] = useState(null);
+
+  const navigate = useNavigate();
 
   const handleStartGame = () => {
     if (!player1 || !player2) {
@@ -24,6 +27,8 @@ const GameSetup = () => {
     alert(
       `Spelet startas!\n${player1} (${player1Piece}) vs ${player2} (${player2Piece})`
     );
+    navigate("/board");
+
   };
   return (
     <div className={styles.container}>
