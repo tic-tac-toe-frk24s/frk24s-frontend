@@ -17,3 +17,26 @@
   background-color: #e0e0e0;
   cursor: pointer;
 }
+.backBtn {
+  align-self: flex-start;       /* place at the top-left */
+  margin-bottom: 20px;          /* spacing below button */
+  padding: 10px 18px;           /* size of button */
+  background: linear-gradient(145deg, #4e4e50, #6c6c70);  /* match your other buttons */
+  color: #fff;                  /* white text */
+  font-family: 'Press Start 2P', cursive; /* same as your app */
+  font-size: 14px;              
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.backBtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.backBtn:active {
+  transform: scale(1.02);
+}

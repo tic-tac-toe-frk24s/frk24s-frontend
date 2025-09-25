@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useGame } from "../context/GameContext";
 import InputField from "../components/InputField/InputField";
 import ChoosePiece from "../components/ChoosePiece";
 
@@ -7,9 +9,9 @@ import styles from "./GameSetup.module.css";
 const GameSetup = () => {
   const [player1, setPlayer1] = useState("");
   const [player2, setPlayer2] = useState("");
-  
+  const navigate = useNavigate();
   const [player1Piece, setPlayer1Piece] = useState(null);
-
+const { setPlayers } = useGame();
   const handleStartGame = () => {
     if (!player1 || !player2) {
       alert("Båda spelarna måste ange sina namn!");
@@ -20,10 +22,14 @@ const GameSetup = () => {
       return;
     }
 
-    const player2Piece = player1Piece === "white" ? "black" : "white";
-    alert(
-      `Spelet startas!\n${player1} (${player1Piece}) vs ${player2} (${player2Piece})`
-    );
+    const player2Piece = player1Piece === "red" ? "yellow" : "red";
+    
+    setPlayers({
+      player1: { name: player1, piece: player1Piece },
+      player2: { name: player2, piece: player2Piece },
+    });
+
+    navigate("/board");
   };
   return (
     <div className={styles.container}>
@@ -51,11 +57,11 @@ const GameSetup = () => {
       </div>
        {player1Piece && (
         <p className={styles.selectionInfo}>
-          {player1} väljer: {player1Piece === "white" ? "⚪ Vit" : "⚫ Svart"} <br/>
-          {player2} får: {player1Piece === "white" ? "⚫ Svart" : "⚪ Vit"}
+          {player1} väljer: {player1Piece === "yellow" ? "🟡 Gul" : "🔴 Röd"} <br/>
+          {player2} får: {player1Piece === "yellow" ? "🔴 Röd" : "🟡 Gul"}
         </p>
       )}
-      <button className={styles.startBtn} onClick={handleStartGame}>
+       <button className={styles.startBtn} onClick={handleStartGame}>
         Börja Spela
       </button>
     </div>
