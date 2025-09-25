@@ -1,12 +1,35 @@
-# React + Vite
+#  Tic-Tac-Toe Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the **frontend** for the FRK24S Tic-Tac-Toe project.  
+It is built using **React + Vite** and styled with **CSS Modules**.  
+Players can set up their names, choose pieces, and play the game on an interactive board.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Features
+-  Enter **Player 1** and **Player 2** names
+-  Choose your game piece (**🔴 Red** or **🟡 Yellow**)
+-  Interactive **board** with  game updates
+-  Responsive layout with modern UI styling
+-  Context API for global state management (players, pieces, turns)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+##  Tech Stack
+-  [Vite](https://vitejs.dev/) – Fast React bundler
+-  [React](https://react.dev/) – UI library
+-  CSS Modules – Scoped component styling
+-  React Router – Page navigation
+-  Context API – Game state provider
+
+---
+
+##  Installation & Setup
+
+ **Clone the repository**
+   ```bash
+   git clone https://github.com/tic-tac-toe-frk24s/frk24s-frontend.git
+   cd frk24s-frontend
+   npm install
+   npm run dev
+
+
