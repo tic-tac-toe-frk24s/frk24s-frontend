@@ -1,35 +1,36 @@
 #  Tic-Tac-Toe Frontend
 
-This is the **frontend** for the FRK24S Tic-Tac-Toe project.  
-It is built using **React + Vite** and styled with **CSS Modules**.  
-Players can set up their names, choose pieces, and play the game on an interactive board.
+Detta är **frontend-delen** av FRK24S Tic-Tac-Toe-projektet.  
+Byggt med **React + Vite** och stylat med **CSS-moduler**.  
+Spelare kan ange sina namn, välja spelpjäser och spela på en interaktiv spelplan.
 
 ---
 
-##  Features
--  Enter **Player 1** and **Player 2** names
--  Choose your game piece (**🔴 Red** or **🟡 Yellow**)
--  Interactive **board** with  game updates
--  Responsive layout with modern UI styling
--  Context API for global state management (players, pieces, turns)
+##  Funktioner
+- Ange namn för **Spelare 1** och **Spelare 2**  
+- Välj din spelpjäs (**🔴 Röd** eller **🟡 Gul**)  
+- Interaktiv **spelplan** med uppdateringar  
+- Responsiv layout med modern UI-design  
+- Context API för global hantering av spelstatus (spelare, pjäser, turer)
 
+---
 
-##  Tech Stack
--  [Vite](https://vitejs.dev/) – Fast React bundler
--  [React](https://react.dev/) – UI library
--  CSS Modules – Scoped component styling
--  React Router – Page navigation
--  Context API – Game state provider
+##  Teknikstack
+- [Vite](https://vitejs.dev/) – Snabb bundler för React  
+- [React](https://react.dev/) – UI-bibliotek  
+- CSS-moduler – Isolerad komponent-styling  
+- React Router – Navigering mellan sidor  
+- Context API – Hantering av global speldata  
 
 ---
 
 ##  Installation & Setup
 
- **Clone the repository**
-   ```bash
-   git clone https://github.com/tic-tac-toe-frk24s/frk24s-frontend.git
-   cd frk24s-frontend
-   npm install
-   npm run dev
+**Klona repot**
+```bash
+git clone https://github.com/tic-tac-toe-frk24s/frk24s-frontend.git
+cd frk24s-frontend
+npm install
+npm run dev
 
 
